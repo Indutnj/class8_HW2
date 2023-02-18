@@ -1,0 +1,299 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS</title>
+   
+</head>
+
+<style>
+
+    body{
+       font-family:'Times New Roman', Times, serif; 
+    }
+   #title1{
+    background-color:rgb(0, 107, 27);
+    color:rgb(255, 255, 255);
+    padding:10px;
+    /*position: fixed;*/
+    margin:20px;
+    width:60%;
+    text-align:center;
+   }
+   .outer{
+    display:flex;
+    flex-direction:column ;
+    background-color:rgb(255, 255, 255);
+    max-width:100%;
+    max-height:100%;
+
+   
+   }
+   .ehead{
+    max-width:100%;
+    max-height:15%;
+    display:flex;
+    flex-direction:row ;
+    justify-content: center;
+    background-color: rgb(0, 48, 16);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   }
+   .ebody{
+   
+    max-width:100%;
+    max-height:100%;
+    
+    background-image: url("event_img/bg2.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    padding:50px;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction:row ;
+    flex-wrap: wrap;
+    align-content:space-around;
+    justify-content:space-around;
+   }
+   .event{
+    margin:10px;
+    width:280px;
+    height:200px;
+    background-color: rgb(129, 255, 167);
+   padding-bottom: 0px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   }
+ 
+   .event_head{
+    font-size: large;
+    text-align:center;
+    padding:10px;
+    font-weight: bold;
+    background-color: rgb(33, 90, 63);
+    color:rgb(255, 255, 255);
+    box-shadow: 0 8px 16px 0 rgba(27, 27, 27, 0.2), 0 6px 20px 0 rgba(5, 4, 4, 0.19);
+    
+    
+   }
+   .event_body{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(rgb(29, 150, 45),rgb(1, 87, 27),rgb(3, 37, 17) );
+    
+    color:rgb(208, 230, 255);
+    /*justify-content:flex-start;*/
+   }
+
+   .event_body:hover{
+    background: linear-gradient(rgb(34, 182, 54),rgb(0, 128, 43),rgb(0, 37, 17) );
+    box-shadow: 0 8px 16px 0 rgba(27, 27, 27, 0.2), 0 6px 20px 0 rgba(5, 4, 4, 0.19);
+   }
+   .event_img{
+    width:50%;
+    height:100%;
+    /*background-color: rgb(0, 0, 0);*/
+    margin:18px;
+   }
+   .event_dtls{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+    width:100px;
+    height:150px;
+    margin:10px;
+   }
+   .img_cls:hover{
+    transform: scale(1.5);
+    box-shadow: 0 8px 16px 0 rgba(27, 27, 27, 0.2), 0 6px 20px 0 rgba(5, 4, 4, 0.19);
+   }
+   .img_cls{
+    margin:10px;
+    width:100px;
+    height:100px;
+    border-radius: 50px;
+   }
+   .inner_dtls{
+    padding-top:5px;
+    padding-bottom:5px;
+    font-size:medium;
+    font-weight: bold;
+    
+   }
+   .button1:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+   }
+   .button2:hover{
+    transform: scale(1.2);
+    cursor: not-allowed;
+   }
+   .button1{
+    background-color: #064e91; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  box-sizing: border-box;
+  width:100px;
+    height:40px;
+   }
+  
+   .button2{
+    background-color: #bb0000; /* red */
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  box-sizing: border-box;
+  width:100px;
+    height:40px;
+   }
+   
+   #head1{
+    text-align:left;
+    margin:30px;
+   }
+</style>
+<body>
+
+<div class="outer">
+  
+    <div class="ehead">
+       
+        <div id="title1">SEARCH EVENTS</div>
+    </div>
+    <div class="ebody">
+      <div class="event">
+        <div class="event_head">
+            Event 1
+        </div>
+        <div class="event_body">
+            <div class="event_img">
+                <img src="event_img\e1.jpg" class="img_cls"></img>
+            </div>
+            <div class="event_dtls">
+                <div class="inner_dtls">23-May-2020</div> 
+                <div class="inner_dtls">Seats Available:23</div>
+                <div class="inner_dtls"><a href="index3.html"><input type="button" value="Book Now" class="button1"></a></div>
+            </div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event_head">
+            Event 2
+        </div>
+        <div class="event_body">
+            <div class="event_img">
+                <img src="event_img\e2.jpg" class="img_cls"></img>
+            </div>
+            <div class="event_dtls">
+                <div class="inner_dtls">23-May-2020</div> 
+                <div class="inner_dtls">Seats Available:23</div>
+                <div class="inner_dtls"><a href="index3.html"><input type="button" value="Book Now" class="button1"></a></div>
+            </div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event_head">
+            Event 3
+        </div>
+        <div class="event_body">
+            <div class="event_img">
+                <img src="event_img\e3.jpg" class="img_cls"></img>
+            </div>
+            <div class="event_dtls">
+                <div class="inner_dtls">23-May-2020</div> 
+                <div class="inner_dtls">Seats Available:0</div>
+                <div class="inner_dtls"><input type="button" value="Sold Out" class="button2"></div>
+            </div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event_head">
+            Event 4
+        </div>
+        <div class="event_body">
+            <div class="event_img">
+                <img src="event_img\e4.jpg" class="img_cls"></img>
+            </div>
+            <div class="event_dtls">
+                <div class="inner_dtls">23-May-2020</div> 
+                <div class="inner_dtls">Seats Available:23</div>
+                <div class="inner_dtls"><a href="index3.html"><input type="button" value="Book Now" class="button1"></a></div>
+            </div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event_head">
+            Event 5
+        </div>
+        <div class="event_body">
+            <div class="event_img">
+                <img src="event_img\e5.jpg" class="img_cls"></img>
+            </div>
+            <div class="event_dtls">
+                <div class="inner_dtls">23-May-2020</div> 
+                <div class="inner_dtls">Seats Available:23</div>
+                <div class="inner_dtls"><a href="index3.html"><input type="button" value="Book Now" class="button1"></a></div>
+            </div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event_head">
+            Event 6
+        </div>
+        <div class="event_body">
+            <div class="event_img">
+                <img src="event_img\e6.jpg" class="img_cls"></img>
+            </div>
+            <div class="event_dtls">
+                <div class="inner_dtls">23-May-2020</div> 
+                <div class="inner_dtls">Seats Available:0</div>
+                <div class="inner_dtls"><input type="button" value="Sold Out" class="button2"></div>
+            </div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event_head">
+            Event 7
+        </div>
+        <div class="event_body">
+            <div class="event_img">
+                <img src="event_img\e7.jpg" class="img_cls"></img>
+            </div>
+            <div class="event_dtls">
+                <div class="inner_dtls">23-May-2020</div> 
+                <div class="inner_dtls">Seats Available:23</div>
+                <div class="inner_dtls"><a href="index3.html"><input type="button" value="Book Now" class="button1"></a></div>
+            </div>
+        </div>   
+      </div>
+      <div class="event">
+        <div class="event_head">
+            Event 8
+        </div>
+        <div class="event_body">
+            <div class="event_img">
+                <img src="event_img\e8.jpg" class="img_cls"></img>
+            </div>
+            <div class="event_dtls">
+                <div class="inner_dtls">23-May-2020</div> 
+                <div class="inner_dtls">Seats Available:23</div>
+                <div class="inner_dtls"><a href="index3.html"><input type="submit" value="Book Now" class="button1"></a></div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>
